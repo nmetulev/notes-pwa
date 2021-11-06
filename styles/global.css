@@ -9,7 +9,7 @@
 
 html, body {
   font-family: var(--font-family);
-  padding: 0;
+  padding: 10px;
   margin: 0;
   background: #181818;
   color: white;
@@ -19,7 +19,7 @@ fast-design-system-provider {
   color: white;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   html,
   body {
     background: #edebe9;
@@ -39,4 +39,4 @@ fast-design-system-provider {
     --neutral-fill-input-active: #e5e5e5;
   }
 
-}
+} */

@@ -5,47 +5,13 @@ import './app-home';
 
 import { Router } from '@vaadin/router';
 
-import '../components/header';
+import '../components/editor/editor';
 
 @customElement('app-index')
 export class AppIndex extends LitElement {
   static get styles() {
     return css`
-      main {
-        padding: 16px;
-      }
 
-      #routerOutlet > * {
-        width: 100% !important;
-      }
-
-      #routerOutlet > .leaving {
-        animation: 160ms fadeOut ease-in-out;
-      }
-
-      #routerOutlet > .entering {
-        animation: 160ms fadeIn linear;
-      }
-
-      @keyframes fadeOut {
-        from {
-          opacity: 1;
-        }
-
-        to {
-          opacity: 0;
-        }
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0.2;
-        }
-
-        to {
-          opacity: 1;
-        }
-      }
     `;
   }
 
@@ -81,11 +47,7 @@ export class AppIndex extends LitElement {
   render() {
     return html`
       <div>
-        <app-header></app-header>
-
-        <main>
-          <div id="routerOutlet"></div>
-        </main>
+        <notes-editor></notes-editor>
       </div>
     `;
   }
